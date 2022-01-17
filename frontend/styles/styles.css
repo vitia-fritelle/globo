@@ -1,6 +1,8 @@
 html {
     font-family: 'Encode Sans', sans-serif;
     width:100vw;
+    margin: 0px;
+    padding: 0px;
 }
 
 a {
@@ -47,8 +49,23 @@ a {
     color: #A81D83;
 }
 
+.tech {
+    color: #666666;
+}
+.videos{
+    color:#0769de;
+}
+
 .border-radius-12 {
     border-radius: 12px;
+}
+
+.mobile {
+    display: none;
+}
+
+.desktop{
+    display: block;
 }
 
 /*Estilos do body*/
@@ -56,6 +73,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 /*Estilos do cabeçalho*/
@@ -65,7 +86,6 @@ header {
     align-items: center;
     height: 80px;
     width: auto;
-    padding: 0 35px;
     flex-direction: column;
     width:100%;
 }
@@ -151,7 +171,7 @@ main section:nth-of-type(2), main section:nth-of-type(3){
     padding-bottom: 36px;
 }
 
-#g1-news  > div:nth-of-type(2), #g1-news  > div:nth-of-type(3){
+#g1-news > div:nth-of-type(2), #g1-news  > div:nth-of-type(3){
     padding-top: 25px;
 }
 
@@ -235,4 +255,148 @@ main section:nth-of-type(2), main section:nth-of-type(3){
     line-height: 19px;
     letter-spacing: -0.048em;
     margin-top: 12px;
+}
+
+@media (max-width: 540px) {
+
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+
+    .desktop{
+        display: none;
+    }
+    
+    .mobile {
+        display: block;
+    }
+
+    /*Estilos da navbar*/
+    nav {
+        width:100%;
+    }
+
+    /*Estilos do main */
+    main {
+        padding: 38px 35px;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    main .news-card-mobile {
+        border-bottom: 1px solid #E6E6E6;
+        padding: 23px 0;
+    }
+
+    main section.g1 .news-card-mobile:first-child {
+        padding: 0 0 23px 0;
+    }
+
+    main section.gshow .news-card-mobile:last-child {
+        border-bottom: 0;
+    }
+
+    main .news-card-mobile > h3{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: -0.045em;
+    }
+
+    main .news-card-mobile > div {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: -0.048em;
+        margin-top: 10px;
+    }
+
+    main section.g1 > .news-card-mobile:first-child > h3{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.028em;
+    }
+
+    main section.g1 > .news-card-mobile:first-child > div{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: -0.068em;
+    }
+
+    #drauzio {
+        height:74px;
+    }
+
+    #libano1 {
+        height:74px;
+    }
+
+    #libano2 {
+        height:74px;
+    }
+
+    #brasileirao {
+        height:74px;
+    }
+
+    #cavani {
+        height:74px;
+    }
+
+    #totalmente {
+        height:74px;
+    }
+
+    #bruno {
+        height:74px;
+    }
+
+    #drauzio:before {
+        content: url(../assets/imgs/drauzio.png);
+        float:left;
+        margin-right:13px;
+    }
+
+    #libano1:before {
+        content: url(../assets/imgs/libano.png);
+        float:left;
+        margin-right:13px;
+    }
+
+    #libano2:before {
+        content: url(../assets/imgs/parto.png);
+        float:left;
+        margin-right:13px;
+    }
+
+    #brasileirao:before {
+        content: url(../assets/imgs/brasileirao.png);
+        float:left;
+        margin-right:13px;
+    }
+
+    #cavani:before {
+        content: url(../assets/imgs/cavani.png);
+        float:left;
+        margin-right:13px;
+    }
+
+    #totalmente:before {
+        content: url(../assets/imgs/totalmente.png);
+        float:left;
+        margin-right:13px;
+    }
+
+    #bruno:before {
+        content: url(../assets/imgs/bruno.png);
+        float:left;
+        margin-right:13px;
+    }
 }
