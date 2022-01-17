@@ -293,11 +293,11 @@ main section:nth-of-type(2), main section:nth-of-type(3){
         padding: 23px 0;
     }
 
-    main section.g1 .news-card-mobile:first-child {
+    main section.g1 a:first-child .news-card-mobile {
         padding: 0 0 23px 0;
     }
 
-    main section.gshow .news-card-mobile:last-child {
+    main section.gshow a:last-child .news-card-mobile {
         border-bottom: 0;
     }
 
@@ -316,14 +316,14 @@ main section:nth-of-type(2), main section:nth-of-type(3){
         margin-top: 10px;
     }
 
-    main section.g1 > .news-card-mobile:first-child > h3{
+    main section.g1 > a:first-child > .news-card-mobile > h3{
         font-size: 32px;
         font-weight: 700;
         line-height: 40px;
         letter-spacing: -0.028em;
     }
 
-    main section.g1 > .news-card-mobile:first-child > div{
+    main section.g1 > a:first-child > .news-card-mobile > div{
         font-size: 18px;
         font-weight: 700;
         line-height: 25px;
